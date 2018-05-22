@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+
+</head>
+
+<style>
+    .calculator-form{
+        background-color: #efefef;
+        text-align: center;
+        font-size: 24px;
+        font-family: monospace;
+        padding: 5px;
+    }
+
+    .header{
+        text-align: center;
+        font-family: monospace;
+        font-size: 45px;
+    }
+
+    .output-table{
+        horiz-align: center;
+        font-size: 24px;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+
+    }
+
+    .submit{
+        background-color: #33ccff;
+    }
+</style>
+
+<body>
+    <h1 class="header">Calculate with Friends!</h1>
+    <h3 id="output" class="header"></h3>
+
+    <div class="calculator-form">
+        Please input an arithmetic expression: <input name="inputForm" id="inputForm" type="text">
+        <button class="submit" onclick="calculate(document.getElementById('inputForm').value)">Calculate</button>
+    </div>
+
+    <br>
+
+    <div id="my-table" class="output-table">
+        <table id="table" class="output-table">
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+        </table>
+    </div>
+
+
+    <script src="../javascript/Calculator.js"></script>
+</body>
+</html>
